@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* li.calendar__item{$}*35 */
+      .calendar {
+        padding: 0;
+        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .calendar__item {
+        list-style: none;
+        width: calc(100% / 7);
+        text-align: center;
+        /* line-height: 30px; */ /*высота строки*/
+        aspect-ratio: 1; /*квадрат*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .calendar__item--small {
+        font-size: 0.75rem;
+      }
+      .calendar__item--grey {
+        color: rgb(220, 214, 214);
+      }
+      .calendar__item--activ {
+        background: black;
+        color: white;
+      }
+      .calendar__item:not(.calendar__item--small):hover {
+        background: lightgray;
+        cursor: pointer;
+      }
+      .timeLine {
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .time--900 {
+        top: calc(100% / 16 * 3); /* 3- это нужная позиция в списке*/
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Schedule</h2>
+      <ul class="calendar">
+        <li class="calendar__item calendar__item--small">Sun</li>
+        <li class="calendar__item calendar__item--small">Mun</li>
+        <li class="calendar__item calendar__item--small">Tue</li>
+        <li class="calendar__item calendar__item--small">Wed</li>
+        <li class="calendar__item calendar__item--small">Thu</li>
+        <li class="calendar__item calendar__item--small">Fri</li>
+        <li class="calendar__item calendar__item--small">Sat</li>
+        <li class="calendar__item calendar__item--grey">00</li>
+        <li class="calendar__item calendar__item--grey">00</li>
+        <li class="calendar__item calendar__item--grey">00</li>
+        <li class="calendar__item calendar__item--grey">00</li>
+        <li class="calendar__item calendar__item--grey">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item calendar__item--activ">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <li class="calendar__item">00</li>
+        <!-- <li class="calendar__item ">00</li> -->
+      </ul>
+    </section>
+    <section>
+      <h3>Upcoming</h3>
+      <div class="timeLine">
+        <div class="timeLine__time">9-00 10-00</div>
+        <!-- /* поставить мщдификатор --900*/ -->
+        <!-- <div class="timeLine__line"></div> -->
+        <div class="timeLine__time">9-00 10-00</div>
+        <div class="timeLine__time">9-00 10-00</div>
+        <div class="timeLine__time">9-00 10-00</div>
+        <div class="timeLine__time">9-00 10-00</div>
+        <div class="timeLine__time">9-00 10-00</div>
+      </div>
+    </section>
+  </body>
+</html>
